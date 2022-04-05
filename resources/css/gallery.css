@@ -1,0 +1,33 @@
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    position:fixed;
+    top:0px;
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+}
+
+.nav li {
+    font-size: 40px;
+    font-family: Brush Script MT;
+    margin-right: 15px;
+    text-decoration:none;
+    display:inline-block;
+    cursor: pointer;
+}

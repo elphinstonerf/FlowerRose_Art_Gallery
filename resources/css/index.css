@@ -1,0 +1,89 @@
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    position:fixed;
+    top:0px;
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+}
+
+.nav li {
+    font-size: 40px;
+    font-family: Brush Script MT;
+    margin-right: 15px;
+    text-decoration:none;
+    display:inline-block;
+    cursor: pointer;
+}
+
+/*Currently working on links and button*/
+.nav li:link{
+    text-decoration: none;
+}
+.nav li:visited {
+    text-decoration: none;
+}
+.nav li:hover {
+    text-decoration:underline;
+}
+
+.splash {
+    display: grid;
+    width: 100%;
+    height: 1000px;
+    background-image: url("../images/pexels-abhishek-gaurav-794644.jpg");
+    background-position: center;
+    background-size: cover;
+    grid-template-areas: "h1"
+                         "a";
+    grid-template-rows: 3fr 1fr;
+    grid-template-columns: 3fr;
+}
+
+.splash h1 {
+    grid-area: h1;
+    font-family: Brush Script MT;
+    font-size: 100px;
+    color: seashell;
+    padding: 10px;
+    justify-self: center;
+    align-self: center;
+}
+
+.button {
+    justify-self: center;
+    align-self:flex-start;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color:seashell;
+    padding: 15px;
+}
+
+.button a {
+    font-family: Brush Script MT;
+    font-size: 30px;
+    
+}
+
+.footer {
+    align-self:flex-start;
+}
