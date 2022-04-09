@@ -1,8 +1,9 @@
-.grid {
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color:bisque;
 }
 
 .header {
@@ -30,4 +31,34 @@
     text-decoration:none;
     display:inline-block;
     cursor: pointer;
+}
+
+.gallery {
+    width: 90%;
+    height: auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-areas: "title title" 
+                        "artist pic";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+}
+
+.title {
+    grid-area: title;
+    justify-self: center;
+}
+.artist {
+    grid-area: artist;
+}
+.pic {
+    grid-area: pic;
+}
+.pic .art {
+    height: 300px;
+    width: 300px;
+}
+.footer {
+    bottom: 0;
+    justify-content: left;
 }
