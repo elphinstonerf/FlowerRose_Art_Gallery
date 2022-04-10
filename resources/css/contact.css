@@ -3,6 +3,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url('../images/painting-background-wallpaper-hd-14473.jpg');
+    background-size: cover;
 }
 
 .header {
@@ -30,4 +32,41 @@ body {
     text-decoration:none;
     display:inline-block;
     cursor: pointer;
+}
+
+
+
+.container {
+    flex: 1;
+    margin-top: 75px;
+}
+
+.title {
+    background-color: rgb(91, 21, 156);
+    padding: 5px 10px 5px 10px;
+    border: 5px solid purple;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+}
+
+.information {
+    background-color: rgb(91, 21, 156);
+    padding: 5px 10px 5px 10px;
+    border: 5px solid purple;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+}
+
+
+
+.footer {
+    position: absolute;
+    bottom:0;
+    background-color: rgb(91, 21, 156);
+    padding: 5px 10px 5px 10px;
+    border: 5px solid purple;
+    border-radius: 10px;
+    color: white;
 }

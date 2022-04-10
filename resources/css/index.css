@@ -10,7 +10,7 @@ body {
     top:0px;
     height: 69px;
     width: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
