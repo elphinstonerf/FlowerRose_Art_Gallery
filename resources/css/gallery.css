@@ -3,20 +3,23 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('../images/painting-background-wallpaper-hd-14473.jpg');
+    background-color: white;
+    background-image: url("../images/2543038.jpg");
     background-size: cover;
 }
 
+/* Navigation Bar and Logo Container*/
 .header {
     position:fixed;
     top:0px;
     height: 69px;
     width: 100%;
-    border-bottom: 3px solid black;
+    /*border-bottom: 3px solid black;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
 
 .logo {
@@ -25,6 +28,7 @@ body {
     margin-left: 10px;
 }
 
+/* Navigation Links and states */
 .nav li {
     font-size: 40px;
     font-family: Brush Script MT;
@@ -34,6 +38,21 @@ body {
     cursor: pointer;
 }
 
+.nav a:link{
+    text-decoration: none;
+    color:black;
+}
+.nav a:visited {
+    text-decoration: none;
+    color: black;
+}
+.nav a:hover {
+    text-decoration:none;
+    color:blueviolet;
+}
+
+
+/* Main Page */
 .title {
     grid-area: title;
     justify-self: center;
@@ -51,18 +70,20 @@ body {
     gap: 20px;
 }
 
+/* Artist Information Section */
 .artist {
     grid-area: artist;
 }
-
 .info {
     background-color: rgb(91, 21, 156);
     padding: 5px 10px 5px 10px;
     border: 5px solid purple;
     border-radius: 10px;
     color: white;
+    box-shadow: 10px 10px 5px rgba(175, 175, 175, 0.299);
 }
 
+/* Picture Gallery*/
 .pic {
     grid-area: pic;
     display: flex;
@@ -76,6 +97,7 @@ body {
 .pic .art {
     height: 400px;
     width: 400px;
+    box-shadow: 10px 10px 5px rgba(175, 175, 175, 0.299);
 }
 
 .artInfo {
@@ -85,7 +107,10 @@ body {
     border-radius: 10px;
     color: white;
     margin-top: 10px;
+    box-shadow: 10px 10px 5px rgba(175, 175, 175, 0.299);
 }
+
+/* Footer details*/
 .footer {
     bottom:0;
     background-color: rgb(91, 21, 156);
@@ -93,4 +118,5 @@ body {
     border: 5px solid purple;
     border-radius: 10px;
     color: white;
+    box-shadow: 10px 10px 5px rgba(175, 175, 175, 0.299);
 }

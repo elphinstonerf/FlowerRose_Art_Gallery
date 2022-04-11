@@ -5,12 +5,14 @@ body {
     align-items: center;
 }
 
+
+/* Navigation Bar and Logo Container*/
 .header {
     position:fixed;
     top:0px;
     height: 69px;
     width: 100%;
-    border-bottom: 3px solid black;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,6 +25,7 @@ body {
     margin-left: 10px;
 }
 
+/* Navigation Links and states */
 .nav li {
     font-size: 40px;
     font-family: Brush Script MT;
@@ -31,18 +34,21 @@ body {
     display:inline-block;
     cursor: pointer;
 }
-
-/*Currently working on links and button*/
-.nav li:link{
+.nav a:link{
     text-decoration: none;
+    color:black;
 }
-.nav li:visited {
+.nav a:visited {
     text-decoration: none;
+    color: black;
 }
-.nav li:hover {
-    text-decoration:underline;
+.nav a:hover {
+    text-decoration:none;
+    color:blueviolet;
 }
 
+
+/* Main Page */
 .splash {
     display: grid;
     width: 100%;
@@ -77,14 +83,26 @@ body {
     border-radius: 5px;
     background-color:seashell;
     padding: 15px;
+    box-shadow: 5px 5px 5px rgb(175, 175, 175);
 }
 
-.button a {
+.button a:link {
     font-family: Brush Script MT;
     font-size: 30px;
-    
+    text-decoration: none;
+    color:black;   
+}
+.button a:visited {
+    text-decoration: none;
+    color:black;
+}
+.button a:hover {
+    text-decoration: none;
+    color:blueviolet;
 }
 
+
+/* Footer details*/
 .footer {
     align-self:flex-start;
 }
