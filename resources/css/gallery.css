@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: white;
-    background-image: url("../images/2543038.jpg");
+    background-image: url("../images/R.jpg");
     background-size: cover;
 }
 
@@ -21,7 +21,6 @@ body {
     background-color: white;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
-
 .logo {
     height: 50px;
     width: auto;
@@ -37,7 +36,6 @@ body {
     display:inline-block;
     cursor: pointer;
 }
-
 .nav a:link{
     text-decoration: none;
     color:black;
@@ -54,25 +52,28 @@ body {
 
 /* Main Page */
 .title {
-    grid-area: title;
-    justify-self: center;
+    display: flex;
+    
+    text-align: center;
     font-family: Brush Script MT;
     font-size: 3rem;
     color:rgb(25, 2, 47)
 }
-
 .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 90%;
     height: auto;
-    display: grid;
-    grid-template-areas: "artist pic";      
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 10%;
 }
 
 /* Artist Information Section */
 .artist {
-    grid-area: artist;
+    max-width: 400px;
+    height: max-content;
+    margin: 10px;
 }
 .info {
     background-color: rgb(91, 21, 156);
@@ -81,25 +82,23 @@ body {
     border-radius: 10px;
     color: white;
     box-shadow: 10px 10px 5px rgba(175, 175, 175, 0.299);
+    align-items: center;
 }
 
+
 /* Picture Gallery*/
-.pic {
-    grid-area: pic;
+.artContainer {
     display: flex;
     flex-direction: column;
-    
-}
-.artContainer {
     margin: 10px;
 }
 
-.pic .art {
+.artContainer .art {
     height: 400px;
     width: 400px;
+    border-radius: 10px;
     box-shadow: 10px 10px 5px rgba(175, 175, 175, 0.299);
 }
-
 .artInfo {
     background-color: rgb(91, 21, 156);
     padding: 5px 10px 5px 10px;
@@ -109,15 +108,45 @@ body {
     
     margin-top: 10px;
     box-shadow: 10px 10px 5px rgba(175, 175, 175, 0.299);
+    max-width: fit-content;
+}
+.button {
+    justify-self: center;
+    align-self:flex-start;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+    max-width: fit-content;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color:seashell;
+    padding: 15px;
+    box-shadow: 5px 5px 5px rgb(175, 175, 175);
+    margin: 10px;
+}
+
+.button a:link {
+    font-family: Brush Script MT;
+    font-size: 30px;
+    text-decoration: none;
+    color:black;   
+}
+.button a:visited {
+    text-decoration: none;
+    color:black;
+}
+.button a:hover {
+    text-decoration: none;
+    color:blueviolet;
 }
 
 /* Footer details*/
 .footer {
     bottom:0;
     background-color: rgb(91, 21, 156);
-    padding: 5px 10px 5px 10px;
+    margin-top: 40px;
+    width: 100%;
+    padding: 10px;
     border: 5px solid purple;
-    border-radius: 10px;
     color: white;
-    box-shadow: 10px 10px 5px rgba(175, 175, 175, 0.299);
 }
