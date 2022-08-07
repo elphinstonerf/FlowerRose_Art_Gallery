@@ -150,3 +150,10 @@ body {
     border: 5px solid purple;
     color: white;
 }
+
+/*Responsive for small screens*/
+@media screen and (max-width: 600px) {  
+    .nav li {
+        font-size: 25px;
+    }
+}
