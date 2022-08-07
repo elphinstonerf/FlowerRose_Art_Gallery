@@ -14,7 +14,6 @@ body {
     top:0px;
     height: 69px;
     width: 100%;
-    /*border-bottom: 3px solid black;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -155,5 +154,12 @@ body {
 @media screen and (max-width: 600px) {  
     .nav li {
         font-size: 25px;
+    }
+    .artContainer {
+        margin: 10px;
+    }
+    .artContainer .art {
+        height: 350px;
+        width: 350px;
     }
 }

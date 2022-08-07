@@ -12,11 +12,11 @@ body {
     top:0px;
     height: 69px;
     width: 100%;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
 
 .logo {
@@ -105,4 +105,11 @@ body {
 /* Footer details*/
 .footer {
     align-self:flex-start;
+}
+
+/*Responsive for small screens*/
+@media screen and (max-width: 600px) {  
+    .nav li {
+        font-size: 25px;
+    }
 }
