@@ -24,12 +24,32 @@
             <h1>Contact Form</h1>
         </div>
         <div class="information">
-            <p>If you would like to contact our artist about a particular piece or would like to make a special request, please contact us below.</p>
+            <p>If you would like to contact our artist about a particular piece or would like to make a special 
+                request, please contact us below. <br> <br> **Form is only for example. Not Active**</p>
         </div>
-        <form>
-            <p>Future contact form</p>
-            <p>begining of form placement</p>
-        </form>
+        <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="project">Project Type</label>
+              <select id="project" name="project">
+                <option value="Drawing">Drawing</option>
+                <option value="Painting">Painting</option>
+                <option value="Clay">Clay</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
     </div>
     <div class="footer">
         <a>Created 4/5/2022</a>
