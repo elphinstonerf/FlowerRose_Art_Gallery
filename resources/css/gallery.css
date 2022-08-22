@@ -97,6 +97,10 @@ body {
     width: 400px;
     border-radius: 10px;
     box-shadow: 10px 10px 5px rgba(175, 175, 175, 0.299);
+    border-style:ridge;
+    border-width: 30px;
+    border-color: plum;
+
 }
 .artInfo {
     background-color: rgb(91, 21, 156);
